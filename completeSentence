@@ -1,0 +1,30 @@
+/* This project will ask the user for input in order to fill in the blanks to complete a sentence */
+
+package chapter2;
+
+import java.util.Scanner;
+
+public class seasonOfTheYear {
+	
+	public static void main(String arg[]){
+		
+		//1. Enter your favorite season of the year
+		System.out.println("Enter your favorite season of the year");
+		Scanner scanner = new Scanner(System.in);
+		String season = scanner.next();
+		
+		//2. Enter a whole number
+		System.out.println("Enter a whole number");
+		int num = scanner.nextInt(); 
+		
+		//3. Enter an Adjective
+		System.out.println("Enter an adjective");
+		String adjective = scanner.next();
+		scanner.close();
+		
+		//4. Display sentence
+		System.out.println(" On a " + adjective + " " + season + 
+				" day, I drink a minimum of " + num  + " cups of coffee.");
+		
+	}
+}
