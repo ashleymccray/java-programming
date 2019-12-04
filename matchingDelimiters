@@ -1,0 +1,42 @@
+/*  This program returns an array of strings split by the matching delimiters,
+	*  including the matching delimiters.*/
+
+public class assignment7 {
+
+	// Split method with two strings
+	public static String[] split(String a, String b) {
+
+		String alpha[];
+		
+		// Replace string a values which
+		// contain the b match with spaces
+		a = (a.replaceAll(b, "?#"));
+		
+		// Split string with spaces
+		alpha = a.trim().split(" ");
+
+		return alpha;
+	}
+
+	public static void main(String args[])
+	{	
+		
+		//declaring the string array	
+		String amount[];
+	
+		//print value of string
+		System.out.println("String \"ab#12#453\" after" + "splitting at \"#"\":");
+	
+		//print array values
+		amount=split ("ab#12#453", "[?#]");
+	
+		//repeat
+		for (string a: alpha)
+	{
+		System.out.println(a);
+	}
+	
+		
+	
+	}
+}
